@@ -1,0 +1,15 @@
+## 安裝環境：
+1.
+`python -m pip install paddlepaddle-gpu==2.5.1.post117 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html`
+2.
+`pip install -r requirements.txt`
+3.
+`wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb`
+4.
+`sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb`
+
+## run
+`! python /content/drive/MyDrive/Colab_Notebooks/DLP/final/main_grid.py --root_path /content/drive/MyDrive/Colab_Notebooks/DLP/final --data_path /content/drive/MyDrive/Colab_Notebooks/DLP/final/dataset/ETTh1.csv --input_dim 7 --percentage 0.01 --itr 3`
+
+記得保存csv
+`!find /content -name "grid_search_results.csv"`
